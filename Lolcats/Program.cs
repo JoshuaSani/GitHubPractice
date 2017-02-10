@@ -16,6 +16,7 @@ namespace Lolcats
         static void MeowMeow()
         {
             // Stanford please make this function say "meow meow".
+            Console.WriteLine("Stamford please make this function say \"meow meow\"");
         }
     }
 }
