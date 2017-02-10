@@ -16,7 +16,28 @@ namespace Lolcats
         static void MeowMeow()
         {
             // Stanford please make this function say "meow meow".
-            Console.WriteLine("Stamford please make this function say \"meow meow\"");
+            Console.Write("Meow? ");
+            string input = Console.ReadLine().ToLower();
+            bool trigger = false;
+            while (trigger != true)
+            {
+                if (input == "meow")
+                {
+                    Console.WriteLine("Meow!");
+                    Console.Write("Meow? ");
+                    input = Console.ReadLine().ToLower();
+                }
+                else if (input == "stop")
+                {
+                    Console.WriteLine(":(");
+                    trigger = true;
+                }
+                else
+                {
+                    Console.Write("Meow!!!!!!???? ");
+                    input = Console.ReadLine().ToLower();
+                }
+            }
         }
     }
 }
